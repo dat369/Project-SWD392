@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/fpt.swd.assignment/src-gen" creationIcons="false"
+    editDirectory="/fpt.swd.assignment.edit/src-gen" editorDirectory="/fpt.swd.assignment.editor/src-gen"
+    modelPluginID="fpt.swd.assignment" modelName="Assignment" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="15.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>assignment.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Assignment" basePackage="fpt.swd" disposableProviderFactory="true"
+      ecorePackage="assignment.ecore#/">
+    <genClasses ecoreClass="assignment.ecore#//AGVServer">
+      <genOperations ecoreOperation="assignment.ecore#//AGVServer/start"/>
+    </genClasses>
+    <genClasses ecoreClass="assignment.ecore#//AGV">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assignment.ecore#//AGV/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assignment.ecore#//AGV/verlocity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assignment.ecore#//AGV/currentPathIndex"/>
+    </genClasses>
+    <genClasses ecoreClass="assignment.ecore#//AGVManager"/>
+    <genClasses ecoreClass="assignment.ecore#//Position">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assignment.ecore#//Position/positionX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assignment.ecore#//Position/positionY"/>
+    </genClasses>
+    <genClasses ecoreClass="assignment.ecore#//WareHouse">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assignment.ecore#//WareHouse/wareshouseMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assignment.ecore#//WareHouse/K"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
